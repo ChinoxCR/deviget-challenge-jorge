@@ -1,0 +1,26 @@
+.section {
+  
+    
+    &__post {
+        overflow: hidden !important;
+        height: 100% !important;
+        //min-width: 50vw;
+       
+        //display: block;
+        &__container {
+            max-width: 18.75rem;
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        &__time {
+            align-self: center;
+        }
+
+        &__image {
+            align-self: center;
+            margin: 1.5rem 0;
+        }
+    }
+}

@@ -1,8 +1,22 @@
 @import '../../assets/scss/helpers/functions';
 @import '../../assets/scss/colors';
 .section {
+
+    .cont {
+        padding-bottom: 10%;
+    }
+   
+    .content {
+        display: flex;
+        align-items: center;
+    }
     &__items {
+        .col-4 {
+            overflow: scroll !important;
+        height: 100vh !important;
+        }
         &__container {
+            
             max-width: toREM(600);
             border-bottom: 1px solid $gray;
             :first-child {
@@ -10,8 +24,19 @@
             }
         }
 
+        &__title {
+            font-size: 1.2rem;
+        }
+
+        &__image {
+            
+            max-width: 7.5rem;
+            height: auto;
+        }
+
         &__description{
-            max-width: toREM(300);
+            //width: toREM(300);
+            
         }
 
         &__icon{
@@ -28,6 +53,23 @@
 
             &__comments {
                 margin-left: toREM(80);
+            }
+        }
+
+        &__dismiss {
+            z-index: 10;
+            position: fixed;
+            bottom: 0;
+            left: 0%;
+            height: 6%;
+            width: 30%;
+            background-color: $black;
+            
+            &__text {
+                padding-top: 1rem;
+                color: $orange;
+                text-align: center;
+
             }
         }
     }
