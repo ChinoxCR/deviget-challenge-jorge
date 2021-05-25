@@ -1,0 +1,142 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/variables';
+@import '../helpers/mixins';
+@import './helpers/functions';
+
+@import 'colors';
+@import 'variables';
+@import 'bootstrap';
+
+
+
+html {
+  font-size: 16px;
+  @include media-breakpoint-up(md){ 
+    font-size: toVW(16, 2000);
+  }
+  @include media-breakpoint-up(xxl){ 
+    font-size: 16px;
+  }
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overscroll-behavior: none;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+a {
+  
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p{
+  line-height: toREM(14, 12);
+  @include media-breakpoint-up(md) {
+    line-height: toREM(27);
+  }
+}
+
+
+small{
+  @include media-breakpoint-up(md){
+    
+  }
+}
+
+sup {
+  top: -0.3em;
+}
+
+svg {
+  pointer-events: none;
+}
+
+.text-shadow {
+  position: relative;
+  z-index: 1;
+  padding: toREM(8) 0;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(50% + 10px);
+    height: 100%;
+    //background-color: $cyan-light;
+    z-index: -1;
+  }
+  &--border {
+    //border-right: 10px solid $cyan-light;
+  }
+}
+
+
+
+.selected {
+  h2 {
+    position: relative;
+    z-index: 1;
+    padding: toREM(8) 0;
+    transition: all 0.3s ease-in-out;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: calc(50% + 10px);
+      height: 100%;
+      //background-color: $cyan-light;
+      z-index: -1;
+    }
+  }
+}
+
+//Spinning css
+.lds-dual-ring {
+  display: block;
+  margin: 0px auto;
+  width: toREM(200);
+  height: toREM(200);
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: toREM(200);
+  height: toREM(200);
+  margin: 8px;
+  border-radius: 50%;
+  border: 10px solid $primary;
+  border-color: $primary transparent $primary transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
