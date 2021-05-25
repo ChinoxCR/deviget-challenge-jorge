@@ -1,6 +1,11 @@
 This coding challenge was developed by Jorge Cerdas, for the "CRM Developer" position.
 
 Please note that, as I was not able to commit my changes in the provided repo, I created one for this chalenge, please find the information below.
+Public repo: https://github.com/ChinoxCR/deviget-challenge-jorge
+The app can be used in the following link https://chinoxcr.github.io/deviget-challenge-jorge/
+
+IMPORTANT NOTES:
+
 1. This project was built using Angular.
 2. The app grabs the 100 top posts from Reddit and displays them through an ngFor cycle, when clicking any of the items, the post will be opened in the main panel, on the right.
 3. The user is able to delete a specific post (by clicking on the orange X button), or, dismiss all posts by clicking on the corresponding button on the left of the container.
