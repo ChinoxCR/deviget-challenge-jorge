@@ -8,15 +8,18 @@
                         <p class="text-white section__items__title d-inline-block">{{post.data.author}}</p>
                         <p class="section__items__time text-gray d-inline-block">{{post.data.created_utc | date : 'mediumTime'}}</p>
                         <div class="content">
-                            <img class="section__items__image" src="{{post.data.thumbnail}}" alt="">
-                            <p class="section__items__description text-white d-inline-block align-middle">{{post.data.title}}</p>
-                            
-                            <span class="section__items__icon text-white align-right">&#62;</span>
+                           <div class="image-cont">
+                               <img class="section__items__image" src="{{post.data.thumbnail}}" alt="">
+                            </div>
+                            <div class="text-cont">
+                                <p class="section__items__description text-white d-inline-block align-middle">{{post.data.title}}</p>
+                                <span class="section__items__icon text-white align-right">&#62;</span>
+                            </div>
                         </div>
                         <div class="section__items__bottom">
                             <a (click)="removeItem(posts, i)" class="section__items__bottom__button text-orange text-decoration-none">X</a>
-                            <span (click)="removeItem(posts, i)" class="text-white">Dismiss Post</span>
-                            <span class="section__items__bottom__comments text-orange">{{post.data.num_comments}} Comments</span>
+                            <span (click)="removeItem(posts, i)" class="text-white">Dismiss&nbsp;Post</span>
+                            <span class="section__items__bottom__comments text-orange">{{post.data.num_comments}}&nbsp;Comments</span>
                         </div>
                     </div>
                 </div>

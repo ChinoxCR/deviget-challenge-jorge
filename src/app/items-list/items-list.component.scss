@@ -8,13 +8,32 @@
    
     .content {
         display: flex;
+        flex-direction: row;
         align-items: center;
+
+        @media only screen and (max-width: 880px) {
+            img {
+                margin-bottom: 1rem;
+            }
+            flex-direction: column;
+        }
     }
     &__items {
         .col-4 {
             overflow: scroll !important;
-        height: 100vh !important;
+            height: 100vh !important;
+            
+            
         }
+        @media only screen and (max-width: 1300px) {
+            .col-4 {
+              width: 50% !important;
+            }
+
+            .col-8 {
+                width: 50% !important;
+              }
+          }
         &__container {
             
             max-width: toREM(600);
@@ -35,7 +54,7 @@
         }
 
         &__description{
-            //width: toREM(300);
+            max-width: toREM(250);
             
         }
 
@@ -45,6 +64,7 @@
 
         &__bottom {
             margin-top: toREM(30);
+            margin-bottom: .3rem;
             &__button {
                 border: 2px solid $orange;
                 padding: 0 4px;
@@ -62,7 +82,7 @@
             bottom: 0;
             left: 0%;
             height: 6%;
-            width: 30%;
+            width: 33vw;
             background-color: $black;
             
             &__text {
