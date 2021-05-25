@@ -1,0 +1,23 @@
+<section class="section section__items bg-black">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div *ngFor="let item of items" class="section__items__container">
+                    
+                    <h4 class="text-white section__items__title d-inline-block">{{item.user}}</h4>
+                    <p class="section__items__time text-gray d-inline-block">{{item.time}}h hours ago</p>
+                    <div class="section__items__image">
+                        <img src="https://picsum.photos/100" alt="">
+                        <p class="section__items__description text-white d-inline-block align-middle">{{item.text}}</p>
+                        <span class="section__items__icon text-white align-right">&#62;</span>
+                    </div>
+                    <div class="section__items__bottom">
+                        <a href="#" class="section__items__bottom__button text-orange text-decoration-none">X</a>
+                        <span class="text-white">Dismiss Post</span>
+                        <span class="section__items__bottom__comments text-orange">Comments</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

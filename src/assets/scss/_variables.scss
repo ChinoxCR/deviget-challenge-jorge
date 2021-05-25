@@ -1,0 +1,112 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder.
+// Just copy a variable from src/sass/bootstrap4/_variables.scss, paste it here and edit the value.
+// @import  '../../node_modules/bootstrap/scss/variables';
+
+// fonts
+$fa-font-path: "../fonts/font-awesome";
+$font-family-sans-serif: "Helvetica", sans-serif;
+
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+
+$paragraph-margin-bottom: 0.75rem;
+
+/*** Headings ***/
+// D: desktop
+// M: mobile
+
+//H2
+//60 D / 42 M
+$h2-font-size: $font-size-base * 1.9090909091;
+
+//H3
+// 44 D / 44 M
+$h3-font-size: $font-size-base * 2;
+
+//H4
+//24 D / 36 M
+//$h4-font-size: $font-size-base * 1.6363636364;
+
+$h2-font-size-desktop: $font-size-base * 2.7272727273;
+$h4-font-size-desktop: $font-size-base * 1.0909090909;
+
+/**
+D: desktop
+M: mobile
+Display1: 42 D / 44 M
+Display2: 20 D / 21 M
+Display3: 36 D / 28 M
+**/
+$display1-size: 2rem;
+$display2-size: 0.9545454545rem;
+$display3-size: 1.2727272727rem;
+$display3-size-desktop: 1.6363636364rem;
+$display1-size-desktop: 1.9090909091rem;
+$display2-size-desktop: 0.9090909091rem;
+
+//Small
+/**
+16 D / 14 M
+**/
+$small-font-size: 0.7777777778rem;
+$small-font-size-desktop: 0.7272727273rem;
+
+$headings-margin-bottom: 0.575em;
+$headings-line-height: 1.25;
+//$headings-font-weight: 700;
+
+@import "colors";
+$body-color: $gray-600;
+
+//$headings-color: white;
+
+$grid-gutter-width: 40px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1920px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1080px,
+  xxl: 1545px,
+);
+
+// Grid
+$grid-columns: 12;
+
+// $line-height-base: 1.187;
+$line-height-base: 1.54545;
+
+$link-color: $primary;
+$link-decoration: underline;
+//$link-hover-color:                      $blue;
+//$link-hover-decoration:                   underline;
+
+// $input-color: #fff;
+// $input-border-color: #d1002a;
+// $input-border-width: 0;
+// $input-border-radius: 0;
+// $input-focus-border-color: #d1002a;
+// $input-placeholder-color: #fff;
+// $input-btn-focus-width: 0;
+
+// $btn-focus-width: 0;
+$btn-font-family: "robotoSlab";
+$btn-border-width: 0;
+$btn-border-radius: 0;
+$btn-line-height: 2rem;
+$btn-line-height-desktop: 1.6363636364rem;
+$btn-padding-y: 1.3888888889rem;
+$btn-padding-y-desktop: 1rem;
+$btn-padding-x: 2.1111111111rem;
+$btn-padding-x-desktop: 2.2272727273rem;
+$btn-font-weight: 500;
+

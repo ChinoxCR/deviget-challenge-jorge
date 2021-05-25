@@ -2,14 +2,11 @@
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/mixins';
 @import '~bootstrap/scss/variables';
-@import 'assets/scss/mixins';
-//@import 'helpers/functions';
-//@import 'fonts/font_weights';
-// @import 'fonts/font_sizes';
-// @import 'fonts/tungsten';
-// @import 'fonts/inter';
-@import 'assets/scss/colors';
-@import 'assets/scss/variables';
+@import '../helpers/mixins';
+@import './helpers/functions';
+
+@import 'colors';
+@import 'variables';
 @import 'bootstrap';
 
 

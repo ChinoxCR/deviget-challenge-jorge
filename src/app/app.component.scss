@@ -1,0 +1,13 @@
+.section {
+    &__main {
+        h2 {
+            font-weight: 700;
+        }
+        &__title {
+            
+                padding-top: 2rem;
+                max-width: 20rem;
+            
+        } 
+    }
+}

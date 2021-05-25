@@ -1,0 +1,34 @@
+@import '../../assets/scss/helpers/functions';
+@import '../../assets/scss/colors';
+.section {
+    &__items {
+        &__container {
+            max-width: toREM(600);
+            border-bottom: 1px solid $gray;
+            :first-child {
+                margin-right: .5rem;
+            }
+        }
+
+        &__description{
+            max-width: toREM(300);
+        }
+
+        &__icon{
+            margin-left: 2rem;
+        }
+
+        &__bottom {
+            margin-top: toREM(30);
+            &__button {
+                border: 2px solid $orange;
+                padding: 0 4px;
+                border-radius: 50%;
+            }
+
+            &__comments {
+                margin-left: toREM(80);
+            }
+        }
+    }
+}
