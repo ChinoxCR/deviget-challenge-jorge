@@ -3,8 +3,8 @@
 		<div class="row">
 			<div class="col-4">
                 <div class="cont">
-                    <div (click)="loadPostComponent(post.data)" *ngFor="let post of posts; let i = index;" [attr.data-index]="i" class="section__items__container">
-                        
+                    <div (click)="loadPostComponent(post.data, i)" *ngFor="let post of posts; let i = index;" class="section__items__container">
+                        <div id="read" class="section__items__read" [attr.data-index]="i"></div>
                         <p class="text-white section__items__title d-inline-block">{{post.data.author}}</p>
                         <p class="section__items__time text-gray d-inline-block">{{post.data.created_utc | date : 'mediumTime'}}</p>
                         <div class="content">

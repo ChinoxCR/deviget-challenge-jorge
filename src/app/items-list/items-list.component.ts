@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 import { PostService } from '../services/post.service';
 
 @Component({
@@ -21,17 +21,23 @@ export class ItemsListComponent implements OnInit {
   constructor(private postService: PostService) { 
     
   }
+
+  
   
   ngOnInit(): void {
       this.postService.getPosts().subscribe((obj) => this.posts = obj.data.children);
   }
 
    
-   openPost() {
-     console.log("description clicked!");
-   }
+  
 
-   loadPostComponent(info: any) {
+   loadPostComponent(info: any, index: any) {
+    var el = document.querySelector(`div[data-index="${index}"]`);
+    console.log(el);
+    el.remove(); // Removes the div with the 'div-02' id
+    
+    
+      
       this.loadComponent = true;
       this.author = info.author;
       this.img_path = info.thumbnail;
@@ -40,9 +46,9 @@ export class ItemsListComponent implements OnInit {
     }
 
     removeItem(info: any, index: any) {
-      console.log("antes" + info);
+      
       info.splice(index, 1);
-      console.log("despues" +info);
+    
     }
 
     removeAllItems(info: any) {

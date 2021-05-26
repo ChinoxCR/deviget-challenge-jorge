@@ -14,15 +14,11 @@ $black: #000;
 $dark-black: #1A1A1A;
 $orange:  #c2854a;
 
-$purple:  #5F249F;
-$green:   #509E2F;
-$cyan:    #00B0B9;
-$beige:   #FFFCF5;
+
+$cyan:    #317df6;
 
 
-$primary:   $purple;
-$secondary: $cyan;
-$tertiary:  $green;
+
 
 $light:     $gray-200;
 $dark:      $gray-600;
@@ -47,9 +43,6 @@ $grays: map-merge(
 $colors: ();
 $colors: map-merge(
   (
-    "purple":       $purple,
-    "green":        $green,
-    "beige":        $beige,
     "cyan":         $cyan,
     'white':        $white,
     'gray-light':   $gray-200,
@@ -62,12 +55,10 @@ $colors: map-merge(
 $theme-colors: ();
 $theme-colors: map-merge(
   (
-    "purple":       $purple,
-    'primary':      $primary,
-    'secondary':    $secondary,
-    'tertiary':     $tertiary,
-    'beige':        $beige,
-    'green':       $green,
+    
+   
+    
+   
     'cyan':       $cyan,
     "black":    $black,
     "dark-black":    $dark-black,
